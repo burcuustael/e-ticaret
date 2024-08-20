@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": "5066",
+      "urunAdi": "domates",
+      "urunResmi": "https://www.aftamarket.com.tr/sebze-38-sebzeler-manav-23805-26-B.jpg"
+    },
+    {
+      "id": "4a5b",
+      "urunAdi": "biber",
+      "urunResmi": "https://termodizayn.com/thumb.php?p=./img/uploads/muhafazakosullari/icerik/17-biber1.jpg&h=434"
+    },
+    {
+      "id": "604d",
+      "urunAdi": "salatalık",
+      "urunResmi": "https://ardenmarket.com.tr/media/catalog/product/cache/0b154ba1d9ffbc98998b9163ce10b49b/s/a/salatalik_kg_engel.png"
+    }
+  ],
+  "baskets": []
+}
