@@ -39,7 +39,7 @@ export class HomeComponent {
   }
 
   sepeteEkle(model: ProductModel) {
-    this._http.post<any>(this.api + 'basket', model).subscribe({
+    this._http.post<any>(this.api + 'baskets', model).subscribe({
       next: () => {
         console.log('sepete eklendi'), this.getBasket();
       },

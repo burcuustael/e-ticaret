@@ -16,5 +16,11 @@
       "urunResmi": "https://ardenmarket.com.tr/media/catalog/product/cache/0b154ba1d9ffbc98998b9163ce10b49b/s/a/salatalik_kg_engel.png"
     }
   ],
-  "baskets": []
+  "baskets": [
+    {
+      "id": "604d",
+      "urunAdi": "salatalık",
+      "urunResmi": "https://ardenmarket.com.tr/media/catalog/product/cache/0b154ba1d9ffbc98998b9163ce10b49b/s/a/salatalik_kg_engel.png"
+    }
+  ]
 }

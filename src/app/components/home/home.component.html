@@ -16,7 +16,10 @@
         <img [src]="product.urunResmi" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">{{ product.urunAdi }}</h5>
-          <button class="btn btn-warning w-100 mt-2">
+          <button
+            class="btn btn-warning w-100 mt-2"
+            (click)="sepeteEkle(product)"
+          >
             <i class="fa fa-basket-shopping"></i>
             Sepete Ekle
           </button>

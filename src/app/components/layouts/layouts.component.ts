@@ -1,27 +1,24 @@
-import { Component } from '@angular/core';
+import { AfterContentChecked, Component } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { BasketModel } from '../../models/basket.model';
 import { HttpClient } from '@angular/common/http';
+import { BasketService } from '../../services/basket.service';
 
 @Component({
   selector: 'app-layouts',
   templateUrl: './layouts.component.html',
   styleUrl: './layouts.component.css',
 })
-export class LayoutsComponent {
+export class LayoutsComponent implements AfterContentChecked {
   api: string = environment.api;
   baskets: BasketModel[] = [];
 
-  constructor(private _http: HttpClient) {}
-
-  ngOnInit(): void {
+  constructor(private _basket: BasketService) {}
+  ngAfterContentChecked(): void {
     this.getBasket();
   }
 
   getBasket() {
-    this._http.get<any>(this.api + 'baskets').subscribe({
-      next: (res) => (this.baskets = res),
-      error: (err) => console.log(err),
-    });
+    this.baskets = this._basket.baskets;
   }
 }
